@@ -1,0 +1,59 @@
+/* =========footer=========== */
+
+.footer-menu{
+    background-color: #000d27;
+    height: 350px;
+    margin-top: 100px;
+    color: white;
+}
+
+.footer-menu ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.link-images li{
+    display: inline;
+}
+
+.link-images img{
+    height: 40%;
+    width: 40%;
+}
+
+.app-store .app{
+    width:35%;
+    height: 35%;
+    
+
+   
+}
+
+#upper-footer{
+    margin-top: 0px;
+    padding-top: 60px;
+}
+
+.download-content{
+    text-align: center;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.contact-no li{
+    padding: 10px 0px;
+}
+.link-images{
+    text-align: center;
+    margin-top: 20px   ;
+}
+#seperator{
+    border: 1px solid;
+    display: flex;
+    clear: both;
+    width: 100%;
+    min-width: 100%;
+    margin: 40px 0;
+}
+

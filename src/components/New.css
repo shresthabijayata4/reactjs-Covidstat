@@ -1,0 +1,40 @@
+.nav-bar img{
+    height: 65px;
+    text-align: center;
+    margin-left: 80px;
+}
+.navbar-nav > li{
+    padding-left:25px;
+    padding-right:25px;
+  }
+
+  .bg-dark{
+      background: transparent !important;
+  }
+  .navbar-fixed-top.scrolled {
+    background-color: #fff !important;
+    transition: background-color 200ms linear;
+  }
+
+.fixed-top.scrolled  {
+  background-color: #fff !important;
+  transition: background-color 500ms linear;
+
+}
+.fixed-top.scrolled a{
+  color: #007bff;
+}
+
+.fixed-top.scrolled a:hover{
+  color: #27588e;
+}
+
+.nav-item a{
+  color: #4fe677 ;
+  font-weight: 700;
+  font-size: large;
+}
+
+.nav-item a:hover{
+  color: #448a27;
+}
