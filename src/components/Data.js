@@ -39,7 +39,7 @@ class Data extends Component{
                             <span clasName="below">Recent updates</span>
                         </div>
                     
-                    <Container className="border-test">
+                     <Container className="border-test">
                         <Row style={{width: '95%',
                             
                             } }>
@@ -84,81 +84,9 @@ class Data extends Component{
                             </Col>
                         </Row>
                         
-                    </Container>
+                        </Container>
                     </div>
-
-
-                    <div className="global-content-table">
-
-                        <div className="global-content">
-                           
-                            <span className="bolder"><b>Global | </b></span> 
-                            <span clasName="smaller">Recent updates</span>
-                        </div>
-                            
-                   
-                        <Container className="border-global" >
-                        
-                        <Row className="update-dates">
-                            <Col>
-                                <span><b>Last update</b></span>
-
-                            </Col>
-                            <Col>
-                                <span><b>Date: </b>{this.state.covidDataWorld.created_at}</span>
-                            </Col>
-                        </Row>
-                        <Row className="data-table">
-
-                            <Col sm={4} className="positive-global-cases">
-
-                                <ul className="global-confirmed-cases">
-                                        <div className="global-allcontents">
-                                            <div className="img-icons">
-                                                <i class="fa fa-thermometer-full" style={{ fontSize : '35px'}} aria-hidden="true"></i>
-                                            </div> 
-                                            <div className="li-global-set">
-                                                <li className="data-global-show">{this.state.covidDataWorld.positive}</li> 
-                                                <li><p>Total infected</p></li>
-                                            </div>
-                                        </div>    
-                                </ul>
-                                
-                            </Col>
-                            <Col sm={4} className="death-global-cases">
-
-                                <ul className="global-death-cases">
-                                    <div className="global-allcontents">
-                                    <li className="show-global-icons"><ImSad size='2rem'/></li> 
-                                    <div className="li-global-set">
-                                        <li className="data-global-show">{this.state.covidDataWorld.deaths}</li> 
-                                        <li><p>Death cases</p></li>
-                                    </div>
-                                    </div>     
-                                </ul>
-                            
-                            </Col>
-                            <Col sm={4} className="recovered-global-cases">
-                                <ul className="global-recovered-cases">
-                                    <div className="global-allcontents">
-                                    <li className="show-global-icons"><FaRegSmileBeam size='2rem'/></li> 
-                                    <div className="li-global-set">
-                                        <li className="data-global-show">{this.state.covidDataWorld.extra3}</li> 
-                                        <li><p>Recovered</p></li>
-                                    </div>
-                                    </div>     
-                                </ul>
-
-                            </Col>
-                            
-
-                        </Row>
-                                
-                                 
-                    </Container>
                     </div>
-
-                </div>
             </React.Fragment>
         )
     }

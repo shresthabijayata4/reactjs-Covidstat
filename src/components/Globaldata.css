@@ -1,0 +1,72 @@
+
+.data-body{
+    margin-top: 40px;
+
+}
+
+.data-table{
+    height: 200px;
+    /* border: 1px solid; */
+    /* text-align: center; */
+    margin-top: 100px;
+   
+   
+}
+.border-global{
+    margin-top: 50px;
+    border-style: groove;
+}
+
+
+.global-content-table{
+    margin-top: 60px;
+}
+.global-content{
+    text-align: center;
+    color: rgb(119, 119, 119);
+}
+
+
+.update-dates .col{
+    text-align: center;
+}
+
+.update-dates{
+    margin-top: 20px;
+}
+
+.data-table ul{
+    list-style-type: none;
+    width: 70%;
+    height: 70%;
+    margin-left: 45px;
+    border-radius: 5px;
+}
+
+.global-confirmed-cases{
+    background-color: rgb(255, 189, 128);
+}
+.global-death-cases{
+ background-color: rgb(252, 170, 170) ;
+}
+.global-recovered-cases{
+  background-color:  rgb(230, 243, 194);
+}
+
+
+.global-allcontents{
+    padding: 10px 20px 0px 0px;
+}
+
+.li-global-set{
+    float: right;
+    padding-top: 10px ;
+}
+.data-global-show{
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.data-table ul:hover{
+    box-shadow: 5px 5px 5px  #888888;
+}
