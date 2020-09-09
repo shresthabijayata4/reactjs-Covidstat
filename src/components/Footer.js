@@ -24,7 +24,7 @@ class Footer extends Component{
                             
                         </div>
                         <div className="col-sm-6">
-                            <div className="download-content"> Download Our Mobile App</div>
+                            {/* <div className="download-content"> Download Our Mobile App</div>
                             <div className="link-images">
                                 <ul>
                                     <li>
@@ -35,7 +35,7 @@ class Footer extends Component{
                                         
                                     </li>
                                 </ul>
-                            </div>
+                            </div> */}
                         </div>
                        
                     </div>

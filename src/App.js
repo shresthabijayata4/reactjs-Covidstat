@@ -43,10 +43,15 @@ class App extends Component {
          
         <div className="walpaper">
           <div className="content">
-          <h1 className="h1-content">Welcome to COVID meter</h1>
+          <div className="h1-content">
+
+            <h1>Welcome to Covid meter</h1>
+            {/* <h2>The coronavirus COVID-19 is affecting 213 countries and territories around the world.</h2> */}
+            <h3> COVID meter provides the coronavirus (COVID-19) disease outbreak updates for a wide  audience of caring people around the Nepal.</h3>
+          </div>
           <div className="buttons">
-            <span className="pad-button"><a class="btn btn-outline-warning btn-lg" href="#global-data" id="button-pad" role="button">Global</a></span>
-            <span className="pad-button"><a class="btn btn-outline-success btn-lg" href="#data" id="button-pad" role="button">Nepal</a></span>
+            <span className="pad-button"><a class="btn btn-danger btn-lg" href="#global-data" id="button-pad" role="button">Global</a></span>
+            <span className="pad-button"><a class="btn btn-success btn-lg" href="#data" id="button-pad" role="button">Nepal</a></span>
           </div>
           </div>
         </div>

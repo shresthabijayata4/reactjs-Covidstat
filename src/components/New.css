@@ -1,7 +1,7 @@
 .nav-bar img{
     height: 65px;
     text-align: center;
-    margin-left: 80px;
+    margin-left: 60px;
 }
 .navbar-nav > li{
     padding-left:25px;
@@ -30,11 +30,13 @@
 }
 
 .nav-item a{
-  color: #4fe677 ;
+  /* color: #177106 ; */
+  /* color: #42bf0d; */
+  color: #bf0c0c;
   font-weight: 700;
   font-size: large;
 }
 
 .nav-item a:hover{
-  color: #448a27;
+  color:#bf0c0c ;
 }
