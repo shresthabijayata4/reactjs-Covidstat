@@ -57,7 +57,7 @@
 
 	margin: 0px 0px;
 	background-image:
-	linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)),
+	linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
 	/* linear-gradient(rgb(136 45 70 / 96%),rgba(32,44,70,0.96)), */
 	url(./assets/images/bg_pic.jpg) ;
 	
