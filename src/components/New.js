@@ -52,9 +52,9 @@ class New extends React.Component{
                                     <li class="nav-item">
                                         <a class="nav-link" href="#global-data">Global</a>
                                     </li>
-                                    <li class="nav-item">
+                                    {/* <li class="nav-item">
                                         <a class="nav-link" href="#footer-menu">Contact</a>
-                                    </li>
+                                    </li> */}
 
                                 </ul>
                                 
