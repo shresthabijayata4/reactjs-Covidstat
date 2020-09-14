@@ -8,7 +8,7 @@ class Footer extends Component{
     render(){
     return(
         <React.Fragment>
-            <div className="footer-menu">
+            {/* <div className="footer-menu">
                 <div className="container">
                     <div className="row" id="upper-footer">
                         
@@ -24,18 +24,7 @@ class Footer extends Component{
                             
                         </div>
                         <div className="col-sm-6">
-                            {/* <div className="download-content"> Download Our Mobile App</div>
-                            <div className="link-images">
-                                <ul>
-                                    <li>
-                                        <a href=""><img src={google}></img></a>
-                                    </li>
-                                    <li className="app-store">
-                                         <a href=""><img src={app} className="app"></img></a>
-                                        
-                                    </li>
-                                </ul>
-                            </div> */}
+                        
                         </div>
                        
                     </div>
@@ -49,7 +38,21 @@ class Footer extends Component{
 
                     </div>
                 </div>
+            </div> */}
+
+            <footer class="site-section bg-light footer">
+          <div class="container">
+            <div class="row mb-5 justify-content-center">
+              <div class="col-md-3" style={{textAlign: 'center'}}>
+                <h3 class="footer-title mb-3" >Follow Us</h3>
+                <a href="https://www.facebook.com/AGI-Infotech-105915604518772/" class="social-circle m-2"><i class="fa fa-facebook" style={{color: 'blue', fontSize: '25px'}}></i></a>
+                <a href="https://www.instagram.com/agiinfotech/" class="social-circle m-2"><i class="fa fa-instagram" style={{color: 'red', fontSize: '25px'}}></i></a>
+                <a href="https://www.linkedin.com/in/agi-infotech-8676ba1b1" class="social-circle m-2"><i class="fa fa-linkedin-square" style={{color: 'dodgerblue', fontSize: '25px'}}></i></a>
+                <p>&copy; 2020 AGI INFOTECH</p>
+              </div>
             </div>
+          </div>
+            </footer>
         </React.Fragment>
     );
 }

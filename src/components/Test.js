@@ -13,11 +13,11 @@ class Test extends React.Component {
   }
 
   componentDidMount() {
-    axios.get('https://covid19.mohp.gov.np/covid/api/confirmedcases')
+    axios.get('https://nepalcorona.info/api/v1/data/nepal')
       .then(response => {
         this.setState({
           covidDataWorld: response.data.global,
-          covidDataNepal: response.data.nepal
+          covidDataNepal: response.data,
         })
       }).catch(err => console.log(err));
   }
@@ -57,21 +57,21 @@ class Test extends React.Component {
               fontFamily: 'courier new',
               color: '#777'}}>Nepal Data</h3> */}
           <Row>
-            <Col xs={6} md={4} style={{
+            {/* <Col xs={6} md={4} style={{
               fontFamily: 'courier new',
               color: '#777',
               fontWeight: 'bold'
             }}>
               Total PCR Test
               <p style={{ color: 'black' }}>{this.state.covidDataNepal.samples_tested}</p>
-            </Col>
+            </Col> */}
             <Col xs={6} md={4} style={{
               fontFamily: 'courier new',
               color: '#777',
               fontWeight: 'bold'
             }}>
               Total RDT Test
-              <p style={{ color: 'black' }}>{this.state.covidDataNepal.extra7}</p>
+              <p style={{ color: 'black' }}>{this.state.covidDataNepal.tested_rdt}</p>
             </Col>
             <Col xs={6} md={4} style={{
               fontFamily: 'courier new',
@@ -79,7 +79,7 @@ class Test extends React.Component {
               fontWeight: 'bold'
             }}>
               Negative Cases
-              <p style={{ color: 'black' }}>{this.state.covidDataNepal.negative}</p>
+              <p style={{ color: 'black' }}>{this.state.covidDataNepal.tested_negative}</p>
             </Col>
           </Row>
           <Row>
@@ -89,7 +89,7 @@ class Test extends React.Component {
               fontWeight: 'bold'
             }}>
               Total In Quarantie
-              <p style={{ color: 'black' }}>{this.state.covidDataNepal.extra8}</p>
+              <p style={{ color: 'black' }}>{this.state.covidDataNepal.quarantined}</p>
             </Col>
             <Col xs={6} md={4} style={{
               fontFamily: 'courier new',
@@ -97,7 +97,7 @@ class Test extends React.Component {
               fontWeight: 'bold'
             }}>
               Total In Isloation
-              <p style={{ color: 'black' }}>{this.state.covidDataNepal.extra2}</p>
+              <p style={{ color: 'black' }}>{this.state.covidDataNepal.in_isolation}</p>
             </Col>
           </Row>
         </Container>

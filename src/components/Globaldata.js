@@ -14,11 +14,12 @@ class Globaldata extends Component{
     }
     
     componentDidMount() {
-        axios.get('https://covid19.mohp.gov.np/covid/api/confirmedcases')
+        axios.get('https://api.covid19api.com/summary')
             .then(response => {
             this.setState({
-                covidDataWorld: response.data.global,
-                covidDataNepal: response.data.nepal
+                covidDataWorld: response.data.Global,
+                covidDataNepal: response.data.nepal,
+                covidDataglobaldate: response.data.Date,
             })
             console.log(response);
         }).catch(err => console.log(err));
@@ -38,15 +39,15 @@ class Globaldata extends Component{
 
                 <Container className="border-global" >
 
-                <Row className="update-dates">
+                {/* <Row className="update-dates">
                     <Col>
                         <span><b>Last update</b></span>
 
                     </Col>
                     <Col>
-                        <span><b>Date: </b>{this.state.covidDataWorld.created_at}</span>
+                        <span><b>Date: </b>{this.state.covidDataglobaldate}</span>
                     </Col>
-                </Row>
+                </Row> */}
                 <Row className="data-table">
 
                     <Col sm={4} className="positive-global-cases">
@@ -57,7 +58,7 @@ class Globaldata extends Component{
                                         <i class="fa fa-thermometer-full" style={{ fontSize : '35px'}} aria-hidden="true"></i>
                                     </div> 
                                     <div className="li-global-set">
-                                        <li className="data-global-show">{this.state.covidDataWorld.positive}</li> 
+                                        <li className="data-global-show">{this.state.covidDataWorld.TotalConfirmed}</li> 
                                         <li><p>Total infected</p></li>
                                     </div>
                                 </div>    
@@ -70,7 +71,7 @@ class Globaldata extends Component{
                             <div className="global-allcontents">
                             <li className="show-global-icons"><ImSad size='2rem'/></li> 
                             <div className="li-global-set">
-                                <li className="data-global-show">{this.state.covidDataWorld.deaths}</li> 
+                                <li className="data-global-show">{this.state.covidDataWorld.TotalDeaths}</li> 
                                 <li><p>Death cases</p></li>
                             </div>
                             </div>     
@@ -82,7 +83,7 @@ class Globaldata extends Component{
                             <div className="global-allcontents">
                             <li className="show-global-icons"><FaRegSmileBeam size='2rem'/></li> 
                             <div className="li-global-set">
-                                <li className="data-global-show">{this.state.covidDataWorld.extra3}</li> 
+                                <li className="data-global-show">{this.state.covidDataWorld.TotalRecovered}</li> 
                                 <li><p>Recovered</p></li>
                             </div>
                             </div>     

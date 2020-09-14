@@ -19,11 +19,11 @@ class Data extends Component{
     }
     
     componentDidMount() {
-        axios.get('https://covid19.mohp.gov.np/covid/api/confirmedcases')
+        axios.get('https://nepalcorona.info/api/v1/data/nepal')
             .then(response => {
             this.setState({
                 covidDataWorld: response.data.global,
-                covidDataNepal: response.data.nepal
+                covidDataNepal: response.data,
             })
             console.log(response);
         }).catch(err => console.log(err));
@@ -53,7 +53,7 @@ class Data extends Component{
                                     <div className="nepal-allcontents">
                                     <li className="show-icons"><GiVirus fontWeight='1rem' size='3rem'/></li> 
                                     <div className="li-set">
-                                        <li className="data-show">{this.state.covidDataNepal.positive}</li> 
+                                        <li className="data-show">{this.state.covidDataNepal.tested_positive}</li> 
                                         <li><p>Confirmed cases</p></li>
                                     </div>
                                     </div>     
@@ -64,7 +64,7 @@ class Data extends Component{
                                     <div className="nepal-allcontents">
                                     <li className="show-icons"> <FaRegSmileBeam size='2.5rem'/> </li> 
                                     <div className="li-set">
-                                    <li className="data-show">{this.state.covidDataNepal.extra1}</li> 
+                                    <li className="data-show">{this.state.covidDataNepal.recovered}</li> 
                                     <li><p> Recovered </p></li> 
                                     </div>
                                     </div>
