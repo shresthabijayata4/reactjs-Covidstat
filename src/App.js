@@ -38,7 +38,7 @@ class App extends Component {
   render(){
     return(
       <div className="App">
-       
+      
         <New />
          
         <div className="walpaper">
@@ -68,7 +68,7 @@ class App extends Component {
         <section id="footer-menu">
           <Footer />
         </section>
-
+        
       </div>
     );
   }

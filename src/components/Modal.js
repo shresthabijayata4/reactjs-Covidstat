@@ -41,7 +41,7 @@ class MyVerticallyCenteredModal extends React.Component {
     const [modalShow, setModalShow] = React.useState(false);
   
     return (
-      <ButtonToolbar style={{float:'right',}}>
+      <ButtonToolbar style={{float:'right'}}>
         <Button style={{borderRadius: 10, height: 40}} onClick={() => setModalShow(true)} variant="info">More</Button>
         <MyVerticallyCenteredModalFunction
           show={modalShow}

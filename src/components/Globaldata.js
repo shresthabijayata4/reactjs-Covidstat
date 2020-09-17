@@ -14,10 +14,10 @@ class Globaldata extends Component{
     }
     
     componentDidMount() {
-        axios.get('https://api.covid19api.com/summary')
+        axios.get('https://data.nepalcorona.info/api/v1/world')
             .then(response => {
             this.setState({
-                covidDataWorld: response.data.Global,
+                covidDataWorld: response.data,
                 covidDataNepal: response.data.nepal,
                 covidDataglobaldate: response.data.Date,
             })
@@ -50,7 +50,7 @@ class Globaldata extends Component{
                 </Row> */}
                 <Row className="data-table">
 
-                    <Col sm={4} className="positive-global-cases">
+                    <Col md={4} sm={12} className="positive-global-cases" id="glob-col">
 
                         <ul className="global-confirmed-cases">
                                 <div className="global-allcontents">
@@ -58,32 +58,32 @@ class Globaldata extends Component{
                                         <i class="fa fa-thermometer-full" style={{ fontSize : '35px'}} aria-hidden="true"></i>
                                     </div> 
                                     <div className="li-global-set">
-                                        <li className="data-global-show">{this.state.covidDataWorld.TotalConfirmed}</li> 
+                                        <li className="data-global-show">{this.state.covidDataWorld.cases}</li> 
                                         <li><p>Total infected</p></li>
                                     </div>
                                 </div>    
                         </ul>
                         
                     </Col>
-                    <Col sm={4} className="death-global-cases">
+                    <Col md={4} sm={12} className="death-global-cases" id="glob-col">
 
                         <ul className="global-death-cases">
                             <div className="global-allcontents">
                             <li className="show-global-icons"><ImSad size='2rem'/></li> 
                             <div className="li-global-set">
-                                <li className="data-global-show">{this.state.covidDataWorld.TotalDeaths}</li> 
+                                <li className="data-global-show">{this.state.covidDataWorld.deaths}</li> 
                                 <li><p>Death cases</p></li>
                             </div>
                             </div>     
                         </ul>
                     
                     </Col>
-                    <Col sm={4} className="recovered-global-cases">
+                    <Col md={4} sm={12} className="recovered-global-cases" id="glob-col">
                         <ul className="global-recovered-cases">
                             <div className="global-allcontents">
                             <li className="show-global-icons"><FaRegSmileBeam size='2rem'/></li> 
                             <div className="li-global-set">
-                                <li className="data-global-show">{this.state.covidDataWorld.TotalRecovered}</li> 
+                                <li className="data-global-show">{this.state.covidDataWorld.recovered}</li> 
                                 <li><p>Recovered</p></li>
                             </div>
                             </div>     

@@ -41,13 +41,13 @@ class Footer extends Component{
             </div> */}
 
             <footer class="site-section bg-light footer">
-          <div class="container">
-            <div class="row mb-5 justify-content-center">
-              <div class="col-md-3" style={{textAlign: 'center'}}>
-                <h3 class="footer-title mb-3" >Follow Us</h3>
-                <a href="https://www.facebook.com/AGI-Infotech-105915604518772/" class="social-circle m-2"><i class="fa fa-facebook" style={{color: 'blue', fontSize: '25px'}}></i></a>
-                <a href="https://www.instagram.com/agiinfotech/" class="social-circle m-2"><i class="fa fa-instagram" style={{color: 'red', fontSize: '25px'}}></i></a>
-                <a href="https://www.linkedin.com/in/agi-infotech-8676ba1b1" class="social-circle m-2"><i class="fa fa-linkedin-square" style={{color: 'dodgerblue', fontSize: '25px'}}></i></a>
+          <div className="container" id="footer-container">
+            <div className="row mb-5 justify-content-center">
+              <div className="col-md-3" style={{textAlign: 'center'}}>
+                <h3 className="footer-title mb-3" >Follow Us</h3>
+                <a href="https://www.facebook.com/AGI-Infotech-105915604518772/" className="social-circle m-2"><i class="fa fa-facebook" style={{color: 'blue', fontSize: '25px'}}></i></a>
+                <a href="https://www.instagram.com/agiinfotech/" className="social-circle m-2"><i class="fa fa-instagram" style={{color: 'red', fontSize: '25px'}}></i></a>
+                <a href="https://www.linkedin.com/in/agi-infotech-8676ba1b1" className="social-circle m-2"><i class="fa fa-linkedin-square" style={{color: 'dodgerblue', fontSize: '25px'}}></i></a>
                 <p>&copy; 2020 AGI INFOTECH</p>
               </div>
             </div>

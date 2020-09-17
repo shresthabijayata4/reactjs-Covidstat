@@ -8,6 +8,8 @@ import {   BrowserRouter as Router,
     Route, 
     Link, 
     Switch } from 'react-router-dom';
+import {FcMenu} from 'react-icons/fc'
+import { IconContext } from "react-icons";
 
 
 
@@ -36,11 +38,18 @@ class New extends React.Component{
                         <nav className="navbar navbar-expand-lg fixed-top">
                             <a className="navbar-brand" href=""><img src={logo}></img></a>
                             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                                <span className="navbar-toggler-icon"></span>
+                                <span className="navbar-toggler-icon">
+                                   
+                                <IconContext.Provider>
+                                    <div className="icon-class-name" >
+                                    <button type="button" class="btn btn-info"><i class="fa fa-bars"></i></button> 
+                                    </div>
+                                </IconContext.Provider>
+                                </span>
                             </button>
 
                             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                                <ul class="navbar-nav ml-auto">
+                                <ul class="nav navbar-nav ml-auto">
                                     <li class="nav-item active">
                                         <a class="nav-link" href=""> Home
                                             <span class="sr-only">(current)</span>

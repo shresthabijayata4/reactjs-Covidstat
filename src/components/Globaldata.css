@@ -1,8 +1,5 @@
 
-.data-body{
-    margin-top: 40px;
 
-}
 
 .data-table{
     height: 200px;
@@ -19,7 +16,7 @@
 
 
 .global-content-table{
-    margin-top: 60px;
+    
 }
 .global-content{
     text-align: center;
@@ -37,9 +34,9 @@
 
 .data-table ul{
     list-style-type: none;
-    width: 70%;
+    width: 85%;
     height: 70%;
-    margin-left: 45px;
+    margin-left: 15px;
     border-radius: 5px;
 }
 
@@ -69,4 +66,30 @@
 
 .data-table ul:hover{
     box-shadow: 5px 5px 5px  #888888;
+}
+
+
+@media only screen and (max-width: 600px){
+    .data-table{
+        height: 500px;
+        /* border: 1px solid; */
+        /* text-align: center; */
+        margin: 50px 0px;
+       
+       
+    }
+
+    .data-table ul{
+        list-style-type: none;
+        width: 80%;
+        height: 115%;
+        margin-left: 35px;
+        border-radius: 5px;
+    }
+
+   
+
+    #glob-col{
+        padding: 20px 15px;
+    }
 }
