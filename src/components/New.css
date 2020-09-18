@@ -56,7 +56,7 @@
 }
 
 .nav-item a:hover{
-  color: yellow;
+  color: white;
 }
 
 @media screen and (max-width: 600px){

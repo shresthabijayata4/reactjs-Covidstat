@@ -51,7 +51,7 @@ class New extends React.Component{
                             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                 <ul class="nav navbar-nav ml-auto">
                                     <li class="nav-item active">
-                                        <a class="nav-link" href=""> Home
+                                        <a class="nav-link" href="https://www.agiinfotech.com/"> Home
                                             <span class="sr-only">(current)</span>
                                         </a>
                                     </li>
